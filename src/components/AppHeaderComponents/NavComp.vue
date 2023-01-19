@@ -16,8 +16,8 @@ export default {
             </div>
             <div class="col">
                 <ul class="d-flex">
-                    <li v-for="li in listItemList">{{ li }}</li>
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li v-for="li in listItemList" :class="(li == listItemList[0]) ? 'active' : ''">{{ li }}</li>
+                    <li><i class=" fa-solid fa-cart-shopping"></i></li>
                 </ul>
             </div>
         </nav>
@@ -42,7 +42,14 @@ section.nav-section {
             font-size: 1.2rem;
         }
     }
+}
 
+.active {
+    color: $brand_secondary;
 
+    &::after {
+        content: "\25BC";
+        margin-left: .5rem;
+    }
 }
 </style>

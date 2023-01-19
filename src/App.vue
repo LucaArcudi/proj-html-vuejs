@@ -13,13 +13,20 @@ export default {
 </script>
 
 <template>
-    <AppHeader />
-    <!-- <AppMain />
-    <AppFooter /> -->
+    <div class="hero">
+        <AppHeader />
+        <!-- <AppMain /> -->
+    </div>
+    <!-- <AppFooter /> -->
 </template>
 
 <style lang="scss">
 @use "../node_modules/bootstrap/scss/bootstrap.scss" as *;
 @use "./styles/general" as *;
 @use "./styles/partials/variables" as *;
+
+div.hero {
+    background-image: url(./assets/img/home-background-hero-scaled.jpg);
+    background-size: cover;
+}
 </style>

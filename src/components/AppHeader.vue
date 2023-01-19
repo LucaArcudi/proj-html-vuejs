@@ -20,7 +20,10 @@ export default {
             <span>Demos</span>
         </div>
         <div class="on-sale">
-            <i class="fa-solid fa-desktop"></i>
+            <div class="d-flex justify-content-center">
+                <p class="dollar">&dollar;</p>
+                <p class="number">39</p>
+            </div>
             <span>On Sale</span>
         </div>
     </header>
@@ -30,9 +33,6 @@ export default {
 @use "../styles/partials/variables" as *;
 
 header {
-    // height: 50rem;
-    background-image: url(../assets/img/home-background-hero-scaled.jpg);
-    background-size: cover;
     position: relative;
 
     span.plus {
@@ -81,8 +81,19 @@ header {
         text-align: center;
         border-radius: 5px;
 
-        i {
-            color: $icon_color;
+        p {
+            display: inline;
+            margin-bottom: 0;
+            color: $price_color;
+            font-weight: 700;
+
+            &.dollar {
+                font-size: .9rem;
+            }
+
+            &.number {
+                font-size: 1.2rem;
+            }
         }
 
         span {
