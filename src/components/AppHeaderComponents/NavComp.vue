@@ -2,7 +2,7 @@
 export default {
     data() {
         return {
-            listItemList: ["Home", "Order Online", "About", "News", "Contact Us", `<i class="fa-solid fa-cart-shopping"></i>`]
+            listItemList: ["Home", "Order Online", "About", "News", "Contact Us"]
         }
     },
 }
@@ -17,6 +17,7 @@ export default {
             <div class="col">
                 <ul class="d-flex">
                     <li v-for="li in listItemList">{{ li }}</li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
                 </ul>
             </div>
         </nav>
@@ -32,7 +33,7 @@ section.nav-section {
     ul {
         margin-top: 1rem;
         margin-bottom: 0;
-        color: $brand_text_primary;
+        color: $brand_primary;
         list-style-type: none;
         justify-content: end;
 
@@ -41,5 +42,7 @@ section.nav-section {
             font-size: 1.2rem;
         }
     }
+
+
 }
 </style>
