@@ -33,6 +33,8 @@ export default {
 @use "../styles/partials/variables" as *;
 
 header {
+    background-image: url(../assets/img/home-background-hero-scaled.jpg);
+    background-size: cover;
     position: relative;
 
     span.plus {

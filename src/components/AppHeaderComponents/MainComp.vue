@@ -13,7 +13,7 @@ export default {
                     <span>Great Food</span> <br>
                     Delivered
                 </h1>
-                <a class="btn btn-danger rounded-pill">VIEW OUR MENU
+                <a class="btn rounded-pill">VIEW OUR MENU
                     <i class="fa-solid fa-circle-arrow-right"></i>
                 </a>
 
@@ -28,7 +28,7 @@ export default {
 
 .row {
     padding-top: 17rem;
-    padding-bottom: 25rem;
+    padding-bottom: 24rem;
 
     p {
         color: $brand_primary;
@@ -52,8 +52,8 @@ export default {
     a {
         background-color: $brand_tertiary;
         padding: .5rem 1.5rem;
-        font-size: .9rem;
         font-weight: 500;
+        color: $brand_primary;
 
         i {
             margin-left: .7rem;
