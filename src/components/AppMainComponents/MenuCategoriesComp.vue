@@ -22,8 +22,23 @@ export default {
                 </div>
             </div>
             <MenuCategoriesCardsComp />
-            <div class="row">
-
+            <div class="row intolerant-food">
+                <div class="col-3">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h4>Vegetarin</h4>
+                </div>
+                <div class="col-3">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                    <h4>Gluten Free</h4>
+                </div>
+                <div class="col-3">
+                    <i class="fa-solid fa-bottle-droplet"></i>
+                    <h4>Dairy Free</h4>
+                </div>
+                <div class="col-3">
+                    <i class="fa-solid fa-burger"></i>
+                    <h4>Keto Friendly</h4>
+                </div>
             </div>
         </div>
 
@@ -50,5 +65,31 @@ div.row {
             margin-left: .7rem;
         }
     }
+}
+
+div.intolerant-food {
+    text-align: center;
+    margin-bottom: 10rem;
+
+    i {
+        font-size: 3rem;
+
+        &.fa-leaf {
+            color: $price_color;
+        }
+
+        &.fa-wheat-awn {
+            color: $brand_secondary;
+        }
+
+        &.fa-bottle-droplet {
+            color: #006194;
+        }
+
+        &.fa-burger {
+            color: #a16d2e;
+        }
+    }
+
 }
 </style>
