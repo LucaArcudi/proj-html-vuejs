@@ -1,9 +1,9 @@
 <script>
-import CardsComp from "./MostPopularCompComponents/CardsComp.vue"
+import MostPopularCardsComp from "./MostPopularComponents/MostPopularCardsComp.vue"
 
 export default {
     components: {
-        CardsComp,
+        MostPopularCardsComp,
     }
 }
 </script>
@@ -34,7 +34,7 @@ export default {
                     <h1>Our Most Popular Dishes</h1>
                 </div>
             </div>
-            <CardsComp />
+            <MostPopularCardsComp />
         </div>
 
         <div class="background container-fluid p-0">
@@ -91,6 +91,7 @@ section.most-popular {
         background-image: url("../../assets/img/first-order-background-scaled.jpg");
         background-size: cover;
         height: 33rem;
+        margin-bottom: 10rem;
 
 
 

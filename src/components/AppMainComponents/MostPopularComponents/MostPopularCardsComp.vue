@@ -1,9 +1,9 @@
 <script>
-import CardComp from "./CardComp.vue"
+import MostPopularCardComp from "./MostPopularCardComp.vue"
 
 export default {
     components: {
-        CardComp,
+        MostPopularCardComp,
     },
     data() {
         return {
@@ -31,7 +31,7 @@ export default {
 
 <template>
     <div class="row text-center">
-        <CardComp v-for="singleCard in mostPopularProductsCards" :card="singleCard" />
+        <MostPopularCardComp v-for="singleCard in mostPopularProductsCards" :card="singleCard" />
         <div class="col">
             <a class="btn rounded-pill">START YOUR ORDER
                 <i class="fa-solid fa-circle-arrow-right"></i>
