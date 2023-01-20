@@ -8,15 +8,39 @@ export default {
     <section class="footer-bot container-lg">
         <div class="row text-center">
             <div class="col">
-                <img src="" alt="">
-                <p>Hungry?</p>
-                <h1>
-                    <span>Great Food</span> <br>
-                    Delivered
-                </h1>
-                <a class="btn rounded-pill">VIEW OUR MENU
-                    <i class="fa-solid fa-circle-arrow-right"></i>
-                </a>
+                <img src="../../assets/img/takeout-logo.png" alt="">
+                <h2>
+                    Stay In The Loop
+                </h2>
+
+                <p>
+                    Sign up to receive up to date news and offers directly in your inbox:
+                </p>
+
+                <form>
+                    <input type="text" placeholder="you@email.com"><br>
+                    <a class="btn rounded-pill">VIEW OUR MENU
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+                </form>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-solid fa-rss"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+
+
+                <p class="credits">
+                    &#169; Copyright 2012 - 2020 | Avada Theme by
+                    <span>ThemeFusion</span>
+                    | All Rights Reserved | Powered by
+                    <span>WordPress</span>
+                </p>
+
 
             </div>
         </div>
@@ -28,26 +52,27 @@ export default {
 @use "../../styles/partials/variables" as *;
 
 .row {
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 10rem;
 
     p {
         color: $brand_primary;
-        font-size: 3rem;
         font-weight: 500;
-        margin-bottom: 0;
     }
 
-    h1 {
-        font-size: 5.1rem;
-        font-weight: 700;
-        color: $brand_primary;
+    h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        color: $brand_secondary;
         margin-bottom: 1rem;
 
-        span {
-            color: $brand_secondary;
-        }
+    }
 
+    input {
+        margin-bottom: 1rem;
+        padding: .5rem 1rem;
+        width: 60%;
+        border-radius: 10rem;
     }
 
     a {
@@ -55,12 +80,31 @@ export default {
         padding: .5rem 1.5rem;
         font-weight: 500;
         color: $brand_primary;
+        width: 60%;
+        margin-bottom: 2rem;
 
         i {
             margin-left: .7rem;
         }
     }
 
+    i {
+        margin: 0 1rem;
+        color: $brand_primary;
+    }
+
+    div.icons {
+        margin-bottom: 1rem;
+    }
+
+    p.credits {
+        font-size: .7rem;
+        color: $brand_secondary;
+
+        span {
+            color: $brand_primary;
+        }
+    }
 
 }
 </style>
