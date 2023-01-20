@@ -12,11 +12,11 @@ export default {
 }
 </script>
 
-<template lang="">
+<template>
     <div class="col-6">
         <img class="img-fluid mb-3" :src="getImagePath(card.imgName)" alt="">
-        <h1>{{card.title}}</h1>
-        <p>{{card.content}}</p>
+        <h1>{{ card.title }}</h1>
+        <p>{{ card.content }}</p>
     </div>
 </template>
 
@@ -25,6 +25,7 @@ export default {
 
 div.col-3 {
     position: relative;
+
 
     h4 {
         color: $brand_primary;
@@ -37,5 +38,10 @@ div.col-3 {
         font-weight: 700;
     }
 
+}
+
+img:hover {
+    filter: brightness(50%);
+    transition: all 1s;
 }
 </style>

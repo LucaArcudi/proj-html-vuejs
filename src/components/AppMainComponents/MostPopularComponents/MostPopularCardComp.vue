@@ -23,6 +23,11 @@ export default {
 <style lang="scss" scoped>
 @use "../../../styles/partials/variables" as *;
 
+img:hover {
+    filter: brightness(50%);
+    transition: all 1s;
+}
+
 span {
     color: $brand_tertiary;
 }

@@ -43,16 +43,19 @@ export default {
 <style lang="scss" scoped>
 @use "../../../styles/partials/variables" as *;
 
-a {
-    background-color: $brand_tertiary;
-    padding: .5rem 1.5rem;
-    font-weight: 500;
-    color: $brand_primary;
-    margin-top: 4rem;
-    margin-bottom: 10rem;
+div.row {
 
-    i {
-        margin-left: .7rem;
+    a {
+        background-color: $brand_tertiary;
+        padding: .5rem 1.5rem;
+        font-weight: 500;
+        color: $brand_primary;
+        margin-top: 4rem;
+        margin-bottom: 10rem;
+
+        i {
+            margin-left: .7rem;
+        }
     }
 }
 </style>
