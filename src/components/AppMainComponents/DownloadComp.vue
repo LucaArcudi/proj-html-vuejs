@@ -53,4 +53,8 @@ section.download {
         margin-bottom: 9rem;
     }
 }
+
+div.row {
+    margin-bottom: 10rem;
+}
 </style>
